@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "Dir 1.1",
+    "type": "directive",
+    "category": "Required",
+    "title": "Any implementation-defined behaviour on which the output of the program depends shall be documented and understood",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.1",
+      "Rule 5.2"
+    ],
+    "file": "required/dir_01_01.md"
+  },
+  {
+    "id": "Dir 2.1",
+    "type": "directive",
+    "category": "Required",
+    "title": "All source files shall compile without any compilation errors",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 1.1"
+    ],
+    "file": "required/dir_02_01.md"
+  },
+  {
+    "id": "Dir 3.1",
+    "type": "directive",
+    "category": "Required",
+    "title": "All code shall be traceable to documented requirements",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/dir_03_01.md"
+  },
+  {
+    "id": "Dir 4.1",
+    "type": "directive",
+    "category": "Required",
+    "title": "Run-time failures shall be minimized",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.11",
+      "Dir 4.12",
+      "Rule 1.3",
+      "Rule 18.1",
+      "Rule 18.2",
+      "Rule 18.3"
+    ],
+    "file": "required/dir_04_01.md"
+  },
+  {
+    "id": "Dir 4.2",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "All usage of assembly language should be documented",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/dir_04_02.md"
+  },
+  {
+    "id": "Dir 4.3",
+    "type": "directive",
+    "category": "Required",
+    "title": "Assembly language shall be encapsulated and isolated",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/dir_04_03.md"
+  },
+  {
+    "id": "Dir 4.4",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "Sections of code should not be “commented out”",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 3.1",
+      "Rule 3.2"
+    ],
+    "file": "advisory/dir_04_04.md"
+  },
+  {
+    "id": "Dir 4.5",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "Identifiers in the same name space with overlapping visibility should be typographically unambiguous",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/dir_04_05.md"
+  },
+  {
+    "id": "Dir 4.6",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "typedefs that indicate size and signedness should be used in place of the basic numerical types",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/dir_04_06.md"
+  },
+  {
+    "id": "Dir 4.7",
+    "type": "directive",
+    "category": "Required",
+    "title": "If a function returns error information, then that error information shall be tested",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.11",
+      "Rule 17.7"
+    ],
+    "file": "required/dir_04_07.md"
+  },
+  {
+    "id": "Dir 4.8",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "If a pointer to a structure or union is never dereferenced within a translation unit, then the implementation of the object should be hidden",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/dir_04_08.md"
+  },
+  {
+    "id": "Dir 4.9",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "A function should be used in preference to a function-like macro where they are interchangeable",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 13.2",
+      "Rule 20.7"
+    ],
+    "file": "advisory/dir_04_09.md"
+  },
+  {
+    "id": "Dir 4.10",
+    "type": "directive",
+    "category": "Required",
+    "title": "Precautions shall be taken in order to prevent the contents of a header file being included more than once",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/dir_04_10.md"
+  },
+  {
+    "id": "Dir 4.11",
+    "type": "directive",
+    "category": "Required",
+    "title": "The validity of values passed to library functions shall be checked",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1",
+      "Dir 4.7"
+    ],
+    "file": "required/dir_04_11.md"
+  },
+  {
+    "id": "Dir 4.12",
+    "type": "directive",
+    "category": "Required",
+    "title": "Dynamic memory allocation shall not be used",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1",
+      "Rule 18.7",
+      "Rule 21.3",
+      "Rule 22.1",
+      "Rule 22.2"
+    ],
+    "file": "required/dir_04_12.md"
+  },
+  {
+    "id": "Dir 4.13",
+    "type": "directive",
+    "category": "Advisory",
+    "title": "Functions which are designed to provide operations on a resource should be called in an appropriate sequence",
+    "analysis": null,
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 22.1",
+      "Rule 22.2",
+      "Rule 22.6"
+    ],
+    "file": "advisory/dir_04_13.md"
+  },
+  {
+    "id": "Rule 1.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "The program shall contain no violations of the standard C syntax and constraints, and shall not exceed the implementation’s translation limits",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 2.1",
+      "Rule 1.2"
+    ],
+    "file": "required/rule_01_01.md"
+  },
+  {
+    "id": "Rule 1.2",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Language extensions should not be used",
+    "analysis": "Undecidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 1.1"
+    ],
+    "file": "advisory/rule_01_02.md"
+  },
+  {
+    "id": "Rule 1.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "There shall be no occurrence of undefined or critical unspecified behaviour",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1"
+    ],
+    "file": "required/rule_01_03.md"
+  },
+  {
+    "id": "Rule 2.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "A project shall not contain unreachable code",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 14.3",
+      "Rule 16.4"
+    ],
+    "file": "required/rule_02_01.md"
+  },
+  {
+    "id": "Rule 2.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "There shall be no dead code",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 17.7"
+    ],
+    "file": "required/rule_02_02.md"
+  },
+  {
+    "id": "Rule 2.3",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A projects hould not contain unused type declarations",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_02_03.md"
+  },
+  {
+    "id": "Rule 2.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A project should not contain unused tag declarations",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_02_04.md"
+  },
+  {
+    "id": "Rule 2.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A project should not contain unused macro declarations",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_02_05.md"
+  },
+  {
+    "id": "Rule 2.6",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A function should not contain unused label declarations",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_02_06.md"
+  },
+  {
+    "id": "Rule 2.7",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "There should be no unused parameters in functions",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_02_07.md"
+  },
+  {
+    "id": "Rule 3.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "The character sequences /* and // shall not be used within a comment",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.4"
+    ],
+    "file": "required/rule_03_01.md"
+  },
+  {
+    "id": "Rule 3.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Line-splicing shall not be used in // comments",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [
+      "Dir 4.4"
+    ],
+    "file": "required/rule_03_02.md"
+  },
+  {
+    "id": "Rule 4.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Octal and hexadecimal escape sequences shall be terminated",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_04_01.md"
+  },
+  {
+    "id": "Rule 4.2",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Trigraphs should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_04_02.md"
+  },
+  {
+    "id": "Rule 5.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "External identifiers shall be distinct",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 1.1",
+      "Rule 5.2",
+      "Rule 5.4",
+      "Rule 5.5"
+    ],
+    "file": "required/rule_05_01.md"
+  },
+  {
+    "id": "Rule 5.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Identifiers declared in the same scope and name space shall be distinct",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 1.1",
+      "Rule 5.1",
+      "Rule 5.3",
+      "Rule 5.4",
+      "Rule 5.5"
+    ],
+    "file": "required/rule_05_02.md"
+  },
+  {
+    "id": "Rule 5.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "An identifier declared in an inner scope shall not hide an identifier declared in an outer scope",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.2",
+      "Rule 5.8"
+    ],
+    "file": "required/rule_05_03.md"
+  },
+  {
+    "id": "Rule 5.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "Macro identifiers shall be distinct",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.1",
+      "Rule 5.2",
+      "Rule 5.5"
+    ],
+    "file": "required/rule_05_04.md"
+  },
+  {
+    "id": "Rule 5.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "Identifiers shall be distinct from macro names",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.1",
+      "Rule 5.2",
+      "Rule 5.4"
+    ],
+    "file": "required/rule_05_05.md"
+  },
+  {
+    "id": "Rule 5.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "A typedef name shall be a unique identifier",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.7"
+    ],
+    "file": "required/rule_05_06.md"
+  },
+  {
+    "id": "Rule 5.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "A tag name shall be a unique identifier",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.6"
+    ],
+    "file": "required/rule_05_07.md"
+  },
+  {
+    "id": "Rule 5.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "Identifiers that define objects or functions with external linkage shall be unique",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 5.3"
+    ],
+    "file": "required/rule_05_08.md"
+  },
+  {
+    "id": "Rule 5.9",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Identifiers that define objects or functions with internal linkage should be unique",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 8.10"
+    ],
+    "file": "advisory/rule_05_09.md"
+  },
+  {
+    "id": "Rule 6.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Bit-fields shall only be declared with an appropriate type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_06_01.md"
+  },
+  {
+    "id": "Rule 6.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Single-bit named bit fields shall not be of a signed type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_06_02.md"
+  },
+  {
+    "id": "Rule 7.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Octal constants shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_07_01.md"
+  },
+  {
+    "id": "Rule 7.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "A “u” or “U” suffix shall be applied to all integer constants that are represented in an unsigned type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_07_02.md"
+  },
+  {
+    "id": "Rule 7.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The lowercase character “l” shall not be used in a literal suffix",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_07_03.md"
+  },
+  {
+    "id": "Rule 7.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "A string literal shall not be assigned to an object unless the object’s type is “pointer to const-qualified char”",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.4",
+      "Rule 11.8"
+    ],
+    "file": "required/rule_07_04.md"
+  },
+  {
+    "id": "Rule 8.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Types shall be explicitly specified",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90",
+    "see_also": [
+      "Rule 8.2"
+    ],
+    "file": "required/rule_08_01.md"
+  },
+  {
+    "id": "Rule 8.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Function types shall be in prototype form with named parameters",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 8.1",
+      "Rule 8.4",
+      "Rule 17.3"
+    ],
+    "file": "required/rule_08_02.md"
+  },
+  {
+    "id": "Rule 8.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "All declarations of an object or function shall use the same names and type qualifiers",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 8.4"
+    ],
+    "file": "required/rule_08_03.md"
+  },
+  {
+    "id": "Rule 8.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "A compatible declaration shall be visible when an object or function with external linkage is defined",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 8.2",
+      "Rule 8.3",
+      "Rule 8.5",
+      "Rule 17.3"
+    ],
+    "file": "required/rule_08_04.md"
+  },
+  {
+    "id": "Rule 8.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "An external object or function shall be declared once in one and only one file",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 8.4"
+    ],
+    "file": "required/rule_08_05.md"
+  },
+  {
+    "id": "Rule 8.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "An identifier with external linkage shall have exactly one external definition",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_08_06.md"
+  },
+  {
+    "id": "Rule 8.7",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Functions and objects should not be defined with external linkage if they are referenced in only one translation unit",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_08_07.md"
+  },
+  {
+    "id": "Rule 8.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "The static storage class specifier shall be used in all declarations of objects and functions that have internal linkage",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_08_08.md"
+  },
+  {
+    "id": "Rule 8.9",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "An object should be defined at block scope if its identifier only appears in a single function",
+    "analysis": "Decidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_08_09.md"
+  },
+  {
+    "id": "Rule 8.10",
+    "type": "rule",
+    "category": "Required",
+    "title": "An inline function shall be declared with the static storage class",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [
+      "Rule 5.9"
+    ],
+    "file": "required/rule_08_10.md"
+  },
+  {
+    "id": "Rule 8.11",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "When an array with external linkage is declared, its size should be explicitly specified",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_08_11.md"
+  },
+  {
+    "id": "Rule 8.12",
+    "type": "rule",
+    "category": "Required",
+    "title": "Within an enumerator list, the value of an implicitly-specified enumeration constant shall be unique",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_08_12.md"
+  },
+  {
+    "id": "Rule 8.13",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A pointer should point to a const-qualified type whenever possible",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_08_13.md"
+  },
+  {
+    "id": "Rule 8.14",
+    "type": "rule",
+    "category": "Required",
+    "title": "The restrict type qualifier shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [],
+    "file": "required/rule_08_14.md"
+  },
+  {
+    "id": "Rule 9.1",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "The value of an object with automatic storage duration shall not be read before it has been set",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.1",
+      "Rule 15.3"
+    ],
+    "file": "mandatory/rule_09_01.md"
+  },
+  {
+    "id": "Rule 9.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "The initializer for an aggregate or union shall be enclosed in braces",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_09_02.md"
+  },
+  {
+    "id": "Rule 9.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "Arrays shall not be partially initialized",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_09_03.md"
+  },
+  {
+    "id": "Rule 9.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "An element of an object shall not be initialized more than once",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [],
+    "file": "required/rule_09_04.md"
+  },
+  {
+    "id": "Rule 9.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "Where designated initializers are used to initialize an array object the size of the array shall be specified explicitly",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [],
+    "file": "required/rule_09_05.md"
+  },
+  {
+    "id": "Rule 10.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Operands shall not be of an inappropriate essential type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.2"
+    ],
+    "file": "required/rule_10_01.md"
+  },
+  {
+    "id": "Rule 10.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Expressions of essentially character type shall not be used inappropriately in addition and subtraction operations",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.1"
+    ],
+    "file": "required/rule_10_02.md"
+  },
+  {
+    "id": "Rule 10.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The value of an expression shall not be assigned to an object with a narrower essential type or of a different essential type category",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.4",
+      "Rule 10.5",
+      "Rule 10.6"
+    ],
+    "file": "required/rule_10_03.md"
+  },
+  {
+    "id": "Rule 10.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "Both operands of an operator in which the usual arithmetic conversions are performed shall have the same essential type category",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.3",
+      "Rule 10.7"
+    ],
+    "file": "required/rule_10_04.md"
+  },
+  {
+    "id": "Rule 10.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The value of an expression should not be cast to an inappropriate essential type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.3",
+      "Rule 10.8"
+    ],
+    "file": "advisory/rule_10_05.md"
+  },
+  {
+    "id": "Rule 10.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "The value of a composite expression shall not be assigned to an object with wider essential type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.3",
+      "Rule 10.7"
+    ],
+    "file": "required/rule_10_06.md"
+  },
+  {
+    "id": "Rule 10.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "If a composite expression is used as one operand of an operator in which the usual arithmetic conversions are performed then the other operand shall not have wider essential type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.4",
+      "Rule 10.6"
+    ],
+    "file": "required/rule_10_07.md"
+  },
+  {
+    "id": "Rule 10.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "The value of a composite expression shall not be cast to a different essential type category or a wider essential type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 10.5"
+    ],
+    "file": "required/rule_10_08.md"
+  },
+  {
+    "id": "Rule 11.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Conversions shall not be performed between a pointer to a function and any other type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_11_01.md"
+  },
+  {
+    "id": "Rule 11.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Conversions shall not be performed between a pointer to an incomplete type and any other type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.5"
+    ],
+    "file": "required/rule_11_02.md"
+  },
+  {
+    "id": "Rule 11.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "A cast shall not be performed between a pointer to object type and a pointer to a different object type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.4",
+      "Rule 11.5",
+      "Rule 11.8"
+    ],
+    "file": "required/rule_11_03.md"
+  },
+  {
+    "id": "Rule 11.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A conversion should not be performed between a pointer to object and an integer type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.3",
+      "Rule 11.7",
+      "Rule 11.9"
+    ],
+    "file": "advisory/rule_11_04.md"
+  },
+  {
+    "id": "Rule 11.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A conversion should not be performed from pointer to void into pointer to object",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.2",
+      "Rule 11.3"
+    ],
+    "file": "advisory/rule_11_05.md"
+  },
+  {
+    "id": "Rule 11.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "A cast shall not be performed between pointer to void and an arithmetic type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_11_06.md"
+  },
+  {
+    "id": "Rule 11.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "A cast shall not be performed between pointer to object and a noninteger arithmetic type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.4"
+    ],
+    "file": "required/rule_11_07.md"
+  },
+  {
+    "id": "Rule 11.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "A cast shall not remove any const or volatile qualification from the type pointed to by a pointer",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.3"
+    ],
+    "file": "required/rule_11_08.md"
+  },
+  {
+    "id": "Rule 11.9",
+    "type": "rule",
+    "category": "Required",
+    "title": "The macro NULL shall be the only permitted form of integer null pointer constant",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 11.4"
+    ],
+    "file": "required/rule_11_09.md"
+  },
+  {
+    "id": "Rule 12.1",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The precedence of operators within expressions should be made explicit",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_12_01.md"
+  },
+  {
+    "id": "Rule 12.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "The right hand operand of a shift operator shall lie in the range zero to one less than the width in bits of the essential type of the left hand operand",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_12_02.md"
+  },
+  {
+    "id": "Rule 12.3",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The comma operator should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_12_03.md"
+  },
+  {
+    "id": "Rule 12.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Evaluation of constant expressions should not lead to unsigned integer wrap-around",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_12_04.md"
+  },
+  {
+    "id": "Rule 13.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "Initializer lists shall not contain persistent side effects",
+    "analysis": "Undecidable, System",
+    "applies_to": "C99",
+    "see_also": [
+      "Rule 13.2"
+    ],
+    "file": "required/rule_13_01.md"
+  },
+  {
+    "id": "Rule 13.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "The value of an expression and its persistent side effects shall be the same under all permitted evaluation orders",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.9",
+      "Rule 13.1",
+      "Rule 13.3",
+      "Rule 13.4"
+    ],
+    "file": "required/rule_13_02.md"
+  },
+  {
+    "id": "Rule 13.3",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A full expression containing an increment (++) or decrement (--) operator should have no other potential side effects other than that caused by the increment or decrement operator",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 13.2"
+    ],
+    "file": "advisory/rule_13_03.md"
+  },
+  {
+    "id": "Rule 13.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The result of an assignment operator should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 13.2"
+    ],
+    "file": "advisory/rule_13_04.md"
+  },
+  {
+    "id": "Rule 13.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "The right hand operand of a logical && or || operator shall not contain persistent side effects",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_13_05.md"
+  },
+  {
+    "id": "Rule 13.6",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "The operand of the sizeof operator shall not contain any expression which has potential side effects",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 18.8"
+    ],
+    "file": "mandatory/rule_13_06.md"
+  },
+  {
+    "id": "Rule 14.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "A loop counter shall not have essentially floating type",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_14_01.md"
+  },
+  {
+    "id": "Rule 14.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "A for loop shall be well-formed",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 14.1",
+      "Rule 14.3",
+      "Rule 14.4"
+    ],
+    "file": "required/rule_14_02.md"
+  },
+  {
+    "id": "Rule 14.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "Controlling expressions shall not be invariant",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 2.1",
+      "Rule 14.2"
+    ],
+    "file": "required/rule_14_03.md"
+  },
+  {
+    "id": "Rule 14.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "The controlling expression of an if statement and the controlling expression of an iteration-statement shall have essentially Boolean type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 14.2",
+      "Rule 20.8"
+    ],
+    "file": "required/rule_14_04.md"
+  },
+  {
+    "id": "Rule 15.1",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The goto statement should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 9.1",
+      "Rule 15.2",
+      "Rule 15.3",
+      "Rule 15.4"
+    ],
+    "file": "advisory/rule_15_01.md"
+  },
+  {
+    "id": "Rule 15.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "The goto statement shall jump to a label declared later in the same function",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.1",
+      "Rule 15.3",
+      "Rule 15.4"
+    ],
+    "file": "required/rule_15_02.md"
+  },
+  {
+    "id": "Rule 15.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "Any label referenced by a goto statement shall be declared in the same block, or in any block enclosing the goto statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 9.1",
+      "Rule 15.1",
+      "Rule 15.2",
+      "Rule 15.4",
+      "Rule 16.1"
+    ],
+    "file": "required/rule_15_03.md"
+  },
+  {
+    "id": "Rule 15.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "There should be no more than one break or goto statement used to terminate any iteration statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.1",
+      "Rule 15.2",
+      "Rule 15.3"
+    ],
+    "file": "advisory/rule_15_04.md"
+  },
+  {
+    "id": "Rule 15.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A function should have a single point of exit at the end",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 17.4"
+    ],
+    "file": "advisory/rule_15_05.md"
+  },
+  {
+    "id": "Rule 15.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "The body of an iteration-statement or a selection-statement shall be a compound-statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_15_06.md"
+  },
+  {
+    "id": "Rule 15.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "All if … else if constructs shall be terminated with an else statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 16.5"
+    ],
+    "file": "required/rule_15_07.md"
+  },
+  {
+    "id": "Rule 16.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "All switch statements shall be well-formed",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.3",
+      "Rule 16.2",
+      "Rule 16.3",
+      "Rule 16.4",
+      "Rule 16.5",
+      "Rule 16.6"
+    ],
+    "file": "required/rule_16_01.md"
+  },
+  {
+    "id": "Rule 16.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "A switch label shall only be used when the most closely-enclosing compound statement is the body of a switch statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 16.1"
+    ],
+    "file": "required/rule_16_02.md"
+  },
+  {
+    "id": "Rule 16.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "An unconditional break statement shall terminate every switch-clause",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 16.1"
+    ],
+    "file": "required/rule_16_03.md"
+  },
+  {
+    "id": "Rule 16.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "Every switch statement shall have a default label",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 2.1",
+      "Rule 16.1"
+    ],
+    "file": "required/rule_16_04.md"
+  },
+  {
+    "id": "Rule 16.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "A default label shall appear as either the first or the last switch label of a switch statement",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.7",
+      "Rule 16.1"
+    ],
+    "file": "required/rule_16_05.md"
+  },
+  {
+    "id": "Rule 16.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "Every switch statement shall have at least two switch-clauses",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 16.1"
+    ],
+    "file": "required/rule_16_06.md"
+  },
+  {
+    "id": "Rule 16.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "A switch-expression shall not have essentially Boolean type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_16_07.md"
+  },
+  {
+    "id": "Rule 17.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "The features of <stdarg.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_17_01.md"
+  },
+  {
+    "id": "Rule 17.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Functions shall not call themselves, either directly or indirectly",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_17_02.md"
+  },
+  {
+    "id": "Rule 17.3",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "A function shall not be declared implicitly",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90",
+    "see_also": [
+      "Rule 8.2",
+      "Rule 8.4"
+    ],
+    "file": "mandatory/rule_17_03.md"
+  },
+  {
+    "id": "Rule 17.4",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "All exit paths from a function with non-void return type shall have an explicit return statement with an expression",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 15.5"
+    ],
+    "file": "mandatory/rule_17_04.md"
+  },
+  {
+    "id": "Rule 17.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The function argument corresponding to a parameter declared to have an array type shall have an appropriate number of elements",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 17.6"
+    ],
+    "file": "advisory/rule_17_05.md"
+  },
+  {
+    "id": "Rule 17.6",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "The declaration of an array parameter shall not contain the static keyword between the [ ]",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [
+      "Rule 17.5"
+    ],
+    "file": "mandatory/rule_17_06.md"
+  },
+  {
+    "id": "Rule 17.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "The value returned by a function having non-void return type shall be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.7",
+      "Rule 2.2"
+    ],
+    "file": "required/rule_17_07.md"
+  },
+  {
+    "id": "Rule 17.8",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "A function parameter should not be modified",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_17_08.md"
+  },
+  {
+    "id": "Rule 18.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "A pointer resulting from arithmetic on a pointer operand shall address an element of the same array as that pointer operand",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1",
+      "Rule 18.4"
+    ],
+    "file": "required/rule_18_01.md"
+  },
+  {
+    "id": "Rule 18.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "Subtraction between pointers shall only be applied to pointers that address elements of the same array",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1",
+      "Rule 18.4"
+    ],
+    "file": "required/rule_18_02.md"
+  },
+  {
+    "id": "Rule 18.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The relational operators >, >=, < and <= shall not be applied to objects of pointer type except where they point into the same object",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.1"
+    ],
+    "file": "required/rule_18_03.md"
+  },
+  {
+    "id": "Rule 18.4",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The +, -, += and -= operators should not be applied to an expression of pointer type",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 18.1",
+      "Rule 18.2"
+    ],
+    "file": "advisory/rule_18_04.md"
+  },
+  {
+    "id": "Rule 18.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "Declarations should contain no more than two levels of pointer nesting",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_18_05.md"
+  },
+  {
+    "id": "Rule 18.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "The address of an object with automatic storage shall not be copied to another object that persists after the first object has ceased to exist",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_18_06.md"
+  },
+  {
+    "id": "Rule 18.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "Flexible array members shall not be declared",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.12",
+      "Rule 21.3"
+    ],
+    "file": "required/rule_18_07.md"
+  },
+  {
+    "id": "Rule 18.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "Variable-length array types shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [
+      "Rule 13.6"
+    ],
+    "file": "required/rule_18_08.md"
+  },
+  {
+    "id": "Rule 19.1",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "An object shall not be assigned or copied to an overlapping object",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 19.2"
+    ],
+    "file": "mandatory/rule_19_01.md"
+  },
+  {
+    "id": "Rule 19.2",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The union keyword should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 19.1"
+    ],
+    "file": "advisory/rule_19_02.md"
+  },
+  {
+    "id": "Rule 20.1",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "#include directives should only be preceded by preprocessor directives or comments",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_20_01.md"
+  },
+  {
+    "id": "Rule 20.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "The ', \" or \\ characters and the /* or // character sequences shall not occur in a header file name",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_02.md"
+  },
+  {
+    "id": "Rule 20.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The #include directive shall be followed by either a <filename> or \"filename\" sequence",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_03.md"
+  },
+  {
+    "id": "Rule 20.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "A macro shall not be defined with the same name as a keyword",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 21.1"
+    ],
+    "file": "required/rule_20_04.md"
+  },
+  {
+    "id": "Rule 20.5",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "#undef should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "advisory/rule_20_05.md"
+  },
+  {
+    "id": "Rule 20.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "Tokens that look like a preprocessing directive shall not occur within a macro argument",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_06.md"
+  },
+  {
+    "id": "Rule 20.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "Expressions resulting from the expansion of macro parameters shall be enclosed in parentheses",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.9"
+    ],
+    "file": "required/rule_20_07.md"
+  },
+  {
+    "id": "Rule 20.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "The controlling expression of a #if or #elif preprocessing directive shall evaluate to 0 or 1",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 14.4"
+    ],
+    "file": "required/rule_20_08.md"
+  },
+  {
+    "id": "Rule 20.9",
+    "type": "rule",
+    "category": "Required",
+    "title": "All identifiers used in the controlling expression of #if or #elif preprocessing directives shall be #define’d before evaluation",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_09.md"
+  },
+  {
+    "id": "Rule 20.10",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The # and ## preprocessor operators should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 20.11"
+    ],
+    "file": "advisory/rule_20_10.md"
+  },
+  {
+    "id": "Rule 20.11",
+    "type": "rule",
+    "category": "Required",
+    "title": "A macro parameter immediately following a # operator shall not immediately be followed by a ## operator",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 20.10"
+    ],
+    "file": "required/rule_20_11.md"
+  },
+  {
+    "id": "Rule 20.12",
+    "type": "rule",
+    "category": "Required",
+    "title": "A macro parameter used as an operand to the # or ## operators, which is itself subject to further macro replacement, shall only be used as an operand to these operators",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_12.md"
+  },
+  {
+    "id": "Rule 20.13",
+    "type": "rule",
+    "category": "Required",
+    "title": "A line whose first token is # shall be a valid preprocessing directive",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_13.md"
+  },
+  {
+    "id": "Rule 20.14",
+    "type": "rule",
+    "category": "Required",
+    "title": "All #else, #elif and #endif preprocessor directives shall reside in the same file as the #if, #ifdef or #ifndef directive to which they are related",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_20_14.md"
+  },
+  {
+    "id": "Rule 21.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "#define and #undef shall not be used on a reserved identifier or reserved macro name",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 20.4"
+    ],
+    "file": "required/rule_21_01.md"
+  },
+  {
+    "id": "Rule 21.2",
+    "type": "rule",
+    "category": "Required",
+    "title": "A reserved identifier or macro name shall not be declared",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_02.md"
+  },
+  {
+    "id": "Rule 21.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The memory allocation and deallocation functions of <stdlib.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.12",
+      "Rule 18.7",
+      "Rule 22.1",
+      "Rule 22.2"
+    ],
+    "file": "required/rule_21_03.md"
+  },
+  {
+    "id": "Rule 21.4",
+    "type": "rule",
+    "category": "Required",
+    "title": "The standard header file <setjmp.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_04.md"
+  },
+  {
+    "id": "Rule 21.5",
+    "type": "rule",
+    "category": "Required",
+    "title": "The standard header file <signal.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_05.md"
+  },
+  {
+    "id": "Rule 21.6",
+    "type": "rule",
+    "category": "Required",
+    "title": "The Standard Library input/output functions shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 22.1",
+      "Rule 22.3",
+      "Rule 22.4",
+      "Rule 22.5",
+      "Rule 22.6"
+    ],
+    "file": "required/rule_21_06.md"
+  },
+  {
+    "id": "Rule 21.7",
+    "type": "rule",
+    "category": "Required",
+    "title": "The atof, atoi, atol and atoll functions of <stdlib.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_07.md"
+  },
+  {
+    "id": "Rule 21.8",
+    "type": "rule",
+    "category": "Required",
+    "title": "The library functions abort, exit, getenv and system of <stdlib.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_08.md"
+  },
+  {
+    "id": "Rule 21.9",
+    "type": "rule",
+    "category": "Required",
+    "title": "The library functions bsearch and qsort of <stdlib.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_09.md"
+  },
+  {
+    "id": "Rule 21.10",
+    "type": "rule",
+    "category": "Required",
+    "title": "The Standard Library time and date functions shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C90, C99",
+    "see_also": [],
+    "file": "required/rule_21_10.md"
+  },
+  {
+    "id": "Rule 21.11",
+    "type": "rule",
+    "category": "Required",
+    "title": "The standard header file <tgmath.h> shall not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [],
+    "file": "required/rule_21_11.md"
+  },
+  {
+    "id": "Rule 21.12",
+    "type": "rule",
+    "category": "Advisory",
+    "title": "The exception handling features of <fenv.h> should not be used",
+    "analysis": "Decidable, Single Translation Unit",
+    "applies_to": "C99",
+    "see_also": [],
+    "file": "advisory/rule_21_12.md"
+  },
+  {
+    "id": "Rule 22.1",
+    "type": "rule",
+    "category": "Required",
+    "title": "All resources obtained dynamically by means of Standard Library functions shall be explicitly released",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.12",
+      "Dir 4.13",
+      "Rule 21.3",
+      "Rule 21.6"
+    ],
+    "file": "required/rule_22_01.md"
+  },
+  {
+    "id": "Rule 22.2",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "A block of memory shall only be freed if it was allocated by means of a Standard Library function",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.12",
+      "Dir 4.13",
+      "Rule 21.3"
+    ],
+    "file": "mandatory/rule_22_02.md"
+  },
+  {
+    "id": "Rule 22.3",
+    "type": "rule",
+    "category": "Required",
+    "title": "The same file shall not be open for read and write access at the same time on different streams",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 21.6"
+    ],
+    "file": "required/rule_22_03.md"
+  },
+  {
+    "id": "Rule 22.4",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "There shall be no attempt to write to a stream which has been opened as read-only",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 21.6"
+    ],
+    "file": "mandatory/rule_22_04.md"
+  },
+  {
+    "id": "Rule 22.5",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "A pointer to a FILE object shall not be dereferenced",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Rule 21.6"
+    ],
+    "file": "mandatory/rule_22_05.md"
+  },
+  {
+    "id": "Rule 22.6",
+    "type": "rule",
+    "category": "Mandatory",
+    "title": "The value of a pointer to a FILE shall not be used after the associated stream has been closed",
+    "analysis": "Undecidable, System",
+    "applies_to": "C90, C99",
+    "see_also": [
+      "Dir 4.13",
+      "Rule 21.6"
+    ],
+    "file": "mandatory/rule_22_06.md"
+  }
+]
